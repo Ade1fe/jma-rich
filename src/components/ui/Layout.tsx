@@ -2,6 +2,7 @@
 import React, { useState, type ReactNode } from "react";
 import { useNavigate } from "react-router-dom";
 import Logo from "../../assets/logo.png";
+import LetsG from "../../assets/letsG.png"
 
 interface LayoutProps {
   children: ReactNode;
@@ -152,10 +153,12 @@ const Layout: React.FC<LayoutProps> = ({ children, showFooter = true }) => {
           <section className="bg-[#403F2B] py-16 px-4 md:py-20">
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
-              <div className="text-white">
-                <h2 className="text-4xl md:text-6xl font-serif leading-tight">
+              <div className="text-white ">
+                {/* <h2 className="text-4xl md:text-6xl font-serif leading-tight">
                   LET'S<br />GET IN<br />TOUCH
-                </h2>
+                </h2> */}
+
+                <img src={LetsG} alt="logo" />
               </div>
 
               <div className="text-white">
