@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, } from 'react-router-dom'
 import './App.css'
 import ContactForm from './components/ContactForm'
 import AfricandiLanding from './components/LandingPage'
