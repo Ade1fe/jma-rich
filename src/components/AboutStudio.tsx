@@ -10,6 +10,8 @@ import jen1 from "../assets/jen1.png"
 import op3 from "../assets/op3.png"
 
 
+
+
 const AboutStudio: React.FC = () => {
 
   return (
@@ -181,8 +183,8 @@ const AboutStudio: React.FC = () => {
 </section>
 
 
-      <section className="max-w-6xl mx-auto px-4 pb-20">
-        <h3 className="text-3xl font-serif mb-12 text-center">BESPOKE PIECES</h3>
+      <section className="max-w-6xl mx-auto px-4 py-20">
+        <h3 className="text-3xl font-serif mb-12 text-center text-[#6C4536]">BESPOKE PIECES</h3>
 
         <div className="grid md:grid-cols-3 gap-6 auto-rows-max">
           {/* Left Item - Standard Height */}

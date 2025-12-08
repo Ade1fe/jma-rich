@@ -39,8 +39,8 @@ const Layout: React.FC<LayoutProps> = ({ children, showFooter = true }) => {
             <a href="#" className="hover:text-[#c9b896] transition">SHOP</a>
             <a href="/service" className="hover:text-[#c9b896] transition">SERVICES</a>
             <a href="/about" className="hover:text-[#c9b896] transition">ABOUT</a>
-            <a href="#" className="hover:text-[#c9b896] transition">INQUIRE</a>
-            <a href="#" className="hover:text-[#c9b896] transition">BLOG</a>
+            <a href="/inquire" className="hover:text-[#c9b896] transition">INQUIRE</a>
+            <a href="/blog" className="hover:text-[#c9b896] transition">BLOG</a>
           </nav>
 
           {/* Mobile Menu Button */}
