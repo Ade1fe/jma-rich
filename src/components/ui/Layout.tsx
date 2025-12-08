@@ -9,17 +9,17 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children, showFooter = true }) => {
-  const [email, setEmail] = useState("");
+  // const [email, setEmail] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navigate = useNavigate();
 
-  const handleSubmit = () => {
-    if (email) {
-      alert("Thank you for joining the waitlist!");
-      setEmail("");
-    }
-  };
+  // const handleSubmit = () => {
+  //   if (email) {
+  //     alert("Thank you for joining the waitlist!");
+  //     setEmail("");
+  //   }
+  // };
 
   return (
     <div className="min-h-screen bg-[#f5f1ea] flex flex-col">
@@ -73,7 +73,7 @@ const Layout: React.FC<LayoutProps> = ({ children, showFooter = true }) => {
         <>
 
           {/* Join the Waitlist */}
-          <section className="bg-[#2d2418] py-16 px-4 md:py-20">
+          {/* <section className="bg-[#2d2418] py-16 px-4 md:py-20">
             <div className="max-w-2xl mx-auto text-center">
               <h2 className="text-3xl md:text-5xl font-serif text-white mb-4">
                 Join the waitlist
@@ -99,10 +99,57 @@ const Layout: React.FC<LayoutProps> = ({ children, showFooter = true }) => {
                 </button>
               </div>
             </div>
-          </section>
+          </section> */}
+ {/* // bg-[linear-gradient(90deg,#A6856C57_0%,#362D26_50%,#A6856C_100%)] */}
+
+          <section className="w-full py-32 px-6 bg-[#2d2418] 
+ 
+  text-[#FFFBF3]">
+
+  <div className="max-w-4xl mx-auto text-center">
+
+    {/* Heading */}
+    <h2 className="text-4xl md:text-6xl font-serif mb-4">
+      Join the waitlist
+    </h2>
+
+    {/* Subtext */}
+    <p className="text-lg md:text-xl opacity-90 mb-12">
+      Bring <span className="italic">Africandi</span> style home. Products
+    </p>
+
+    {/* Input + Button */}
+    <div className="flex justify-center">
+      <div className="flex items-center 
+          w-full max-w-lg md:max-w-md 
+          border border-[#CBBBA4] rounded-xl overflow-hidden">
+
+        {/* Input */}
+        <input
+          type="email"
+          placeholder="Enter your email"
+          className="flex-1 px-4 py-3 bg-transparent 
+                     text-[#FFFBF3] placeholder-[#CBBBA4] text-sm
+                     focus:outline-none"
+        />
+
+        {/* Button */}
+        <button className="px-6 py-3 bg-[#F2E5C8] text-[#3A2A21]
+                           text-[11px] md:text-xs uppercase tracking-wide
+                           hover:bg-[#E8D7B6] transition">
+          Join the village
+        </button>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
 
           {/* Get In Touch */}
-          <section className="bg-[#3d3428] py-16 px-4 md:py-20">
+          <section className="bg-[#403F2B] py-16 px-4 md:py-20">
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
               <div className="text-white">
@@ -134,8 +181,7 @@ const Layout: React.FC<LayoutProps> = ({ children, showFooter = true }) => {
               {/* Brand */}
               <div>
                 <div className="flex items-center space-x-2 mb-4">
-                  <div className="w-8 h-8 bg-[#d4c5a9] rounded-full"></div>
-                  <span className="font-serif text-xl">IMA & CO.</span>
+                  <img src={Logo} className="w-32 md:w-48" alt="logo" />
                 </div>
 
                 <p className="text-sm text-gray-400 mb-4">

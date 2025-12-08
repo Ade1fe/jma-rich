@@ -114,7 +114,7 @@ const AfricandiLanding = () => {
             ].map((card, index) => (
             <div
   key={index}
-  className="bg-[#E3D8C2] p-6 rounded-lg border border-[#d4c5a9]/20 
+  className="bg-[#E3D8C2] p-6 rounded-lg border border-[#d4c5a9]/20 text-[#362D26]
              hover:border-[#d4c5a9]/50 transform hover:scale-110 
              transition-all duration-300 cursor-pointer"
 >
@@ -128,32 +128,34 @@ const AfricandiLanding = () => {
       loading="lazy"
     />
                 </div>
-                <h3 className="text-lg font-serif mb-3">{card.title}</h3>
-                <p className="text-sm text-gray-400 leading-relaxed">{card.description}</p>
+                <h3 className="text-lg font-serif mb-3 ">{card.title}</h3>
+                <p className="text-sm  leading-relaxed">{card.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Kitchen Image Section 2 */}
-      <section className="py-12">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="bg-gray-300 h-96 md:h-[600px] rounded-lg flex items-center justify-center text-gray-600">
-            {/* Replace with: <img src="./assets/kitchen-2.jpg" className="w-full h-full object-cover rounded-lg" /> */}
-            [Kitchen Image 2]
-          </div>
-        </div>
-      </section>
+{/* Kitchen Image Section */}
+<section className="py-0">
+  <div className="w-full">
+    <img
+      src={kitImg}
+      alt="Africandi Kitchen"
+      className="w-full h-[60rem] object-cover"
+      loading="lazy"
+    />
+  </div>
+</section>
 
       {/* Video Section */}
-      <section className="bg-[#3d3428] py-20">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <button className="w-20 h-20 rounded-full border-2 border-white/50 flex items-center justify-center mx-auto hover:border-white transition group">
-            <div className="w-0 h-0 border-l-[16px] border-l-white border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent ml-1 group-hover:scale-110 transition"></div>
-          </button>
-        </div>
-      </section>
+   <section className="bg-[#3d3428] py-20">
+  <div className="max-w-4xl h-[400px] mx-auto px-4 flex items-center justify-center">
+    <button className="w-20 h-20 rounded-full border-2 border-white/50 flex items-center justify-center hover:border-white transition group">
+      <div className="w-0 h-0 border-l-[16px] border-l-white border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent ml-1 group-hover:scale-110 transition"></div>
+    </button>
+  </div>
+</section>
 
 
 
