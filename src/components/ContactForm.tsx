@@ -58,14 +58,25 @@ const ContactFormPage = () => {
 
   return (
     <Layout showFooter={false}>
-      <div className="max-w-3xl mx-auto px-8 py-16">
-        <h1 className="text-center text-5xl font-serif text-[#3d3428] mb-2">
-          START YOUR <span className="italic">AFRICANDI</span>
+      <div className="max-w-3xl mx-auto px-8 py-16 font-livret ">
+        <h1 className="text-center font-livret font-serif  font-thin  text-5xl text-[#3d3428] mb-2">
+
+          START YOUR <span className="italic font-thin">AFRICANDI</span>
         </h1>
-        <h2 className="text-center text-5xl font-serif text-[#8b7355] mb-8">
+        <h2 className="text-center text-5xl font-serif text-[#8b7355] mb-8 font-thin">
           DESIGN JOURNEY
         </h2>
+  {/* <div className="text-center">
+      <h1 className="font-livret text-5xl text-[#3d3428] mb-2 font-thin">
+        START YOUR{" "}
+        <span className="italic font-thin">AFRICANDI</span>{" "}
+        <span className="font-bold">EXPERIENCE</span>
+      </h1>
 
+      <h2 className="font-livret text-5xl text-[#8b7355] mb-8 font-normal">
+        DESIGN JOURNEY
+      </h2>
+    </div> */}
         <p className="text-center text-[#5a4a3a] mb-12 text-sm">
           We're excited to learn more about your space. Please complete the form below<br />
           and our team will follow up with next steps within 48 hours

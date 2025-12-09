@@ -1,12 +1,17 @@
 @import "tailwindcss";
-/* Fade + slide-up */
-.fade-up {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "TT Livret";
+  src: url("/fonts/tt-livret/TT-Livret-Trial-Roman-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
 }
 
-.fade-up.show {
-  opacity: 1;
-  transform: translateY(0);
+@font-face {
+  font-family: "TT Livret";
+  src: url("/fonts/tt-livret/TT-Livret-Trial-Italic-Variable-BF6438a52609144.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
 }

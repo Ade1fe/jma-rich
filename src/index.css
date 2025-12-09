@@ -1,1 +1,17 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "TT Livret";
+  src: url("/fonts/tt-livret/TT-Livret-Trial-Roman-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Livret";
+  src: url("/fonts/tt-livret/TT-Livret-Trial-Italic-Variable-BF6438a52609144.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
